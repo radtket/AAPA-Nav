@@ -12,6 +12,7 @@
 .header {
 	display: flex;
 	flex-direction: column;
+	position: relative;
 
 	@include media($medium-up) {
 		display: block;
@@ -123,12 +124,17 @@
 		}
 
 		&--mobile {
-			padding: 0 1.75em;
+			padding: 0;
+			position: absolute;
+			top: 124px;
+			z-index: 2;
+			width: 100%;
 
 			.search-form {
 				border: 3px solid rgba($color-platinum, 0.36);
 				border-radius: 3px;
 				box-shadow: 0 2px 4px rgba($black, 0.1);
+				margin: 0 1.75em;
 
 				&__label {
 					border-radius: 0;

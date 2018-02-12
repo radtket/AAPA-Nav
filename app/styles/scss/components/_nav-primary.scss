@@ -86,7 +86,7 @@
 
 			@include media($medium-up) {
 				flex-grow: 1;
-				width: 20%;
+				// width: 20%;
 				padding-left: 0;
 				padding-right: 0;
 
@@ -99,14 +99,29 @@
 						top: 0;
 						bottom: 0;
 					}
+					&.current-menu-item {
+						> a {
+							background-color: rgba($color-gray, .5);
+						}
+					}
 				}
 
 				> a {
 					height: 100%;
 					padding: 1.5em 1em;
+					-webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+					-moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+					-o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+					-ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+					transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+					&:hover {
+						background-color: rgba($color-gray, .25);
+					}
 
 					> span {
 						color: $color-teal;
+						display: block;
+						text-align: center;
 
 						> em {
 							color: $body-text-color;
@@ -114,7 +129,8 @@
 
 						&::after {
 							content: '+';
-							display: block;
+							display: inline-block;
+							margin-left: .5rem;
 						}
 					}
 

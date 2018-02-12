@@ -8,7 +8,7 @@ $outer-container-margin: ($column / 2);
 $visual-grid-color: red !global;
 $visual-grid-index: front !global;
 $visual-grid-opacity: 0.1 !global;
-$visual-grid: true !global;
+$visual-grid: false !global;
 
 @import "../../../node_modules/bourbon-neat/app/assets/stylesheets/_neat";
 @import "variables/media-queries";
