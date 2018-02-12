@@ -1,0 +1,92 @@
+$font-stack-system: BentonSans,
+	-apple-system,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	"Roboto",
+	"Oxygen",
+	"Ubuntu",
+	"Cantarell",
+	"Fira Sans",
+	"Droid Sans",
+	"Helvetica Neue",
+	sans-serif !default;
+
+
+
+// Typography
+$base-font-family: $font-stack-system;
+$heading-font-family: $base-font-family;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: 1.5em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+
+// Colors
+$color-prussian-blue: #002D4B;
+$color-indigo: #003C69;
+$color-teal: #007A87;
+$color-sea-green: #19A8B8;
+$color-white: #FFFFFF;
+$color-snow: #FAFAFA;
+$color-platinum: #E8E8E8;
+$color-gray: #BBBBBB;
+$color-taupe-gray: #888888;
+$color-quartz: #4A4A4A;
+$color-orange: #f37f30;
+
+$color-primary: $color-indigo;
+$color-secondary: $color-teal;
+
+// HTML Colors
+$html-bg-color: $color-indigo;
+$html-text-color: $color-white;
+
+// Body Colors
+$body-bg-color: $color-white;
+$body-text-color: $color-quartz;
+
+$darker-text-color: darken($body-text-color, 15%);
+$lighter-text-color: lighten($body-text-color, 15%);
+
+// Anchor Colors
+$link-text-color: $color-sea-green;
+
+// Border
+$hr-border-color: $color-gray;
+$line-gray: $color-gray;
+$line-light-gray: lighten($color-gray, 15%);
+
+$black: #000;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $link-text-color;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
