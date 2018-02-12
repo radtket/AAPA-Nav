@@ -146,7 +146,7 @@ gulp.task('styles', () =>
 gulp.task('styles-deploy', () =>
 	// the initializer / master SCSS file, which will just be a file that imports everything
 	gulp
-		.src('app/styles/scss/init.scss')
+		.src('app/styles/scss/site.scss')
 		.pipe(plumber())
 		// include SCSS includes folder
 		.pipe(sassGlob())
