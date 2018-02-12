@@ -1,0 +1,6 @@
+.nav {
+	&__menu--depth0 {
+		@include clearfix();
+	}
+
+}

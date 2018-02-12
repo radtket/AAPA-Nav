@@ -1,0 +1,20 @@
+.bg {
+	&--orange {
+		background-color: $color-orange;
+		color: $color-white;
+		padding: 0.5em 1em;
+		margin-right: 1em;
+		font-size: 0.6875em;
+		text-transform: uppercase;
+	}
+}
+
+.text {
+	&--uppercase-gray {
+		color: $color-gray;
+		font-size: 0.75em;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+}

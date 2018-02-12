@@ -22,12 +22,3 @@ $(document).ready(function() {
 $(window).resize(function() {
 	// js_height_init();
 });
-
-$('.owl-carousel').owlCarousel({
-	loop: true,
-	nav: false,
-	items: 1,
-	autoplay: true,
-	autoplayTimeout: 7000,
-	autoplayHoverPause: true,
-});

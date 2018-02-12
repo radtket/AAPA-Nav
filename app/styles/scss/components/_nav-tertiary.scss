@@ -1,0 +1,38 @@
+.nav--tertiary {
+	.nav {
+		&__menu-item {
+			float: left;
+			font-size: 0.875em;
+
+			&--active,
+			&.current-page-ancestor {
+				.nav__link {
+					color: $color-teal;
+					font-weight: 500;
+				}
+			}
+
+			&:first-child {
+				.nav__link {
+					padding-left: 0;
+				}
+			}
+
+			&__label {
+				display: none;
+			}
+		}
+
+		&__link {
+			color: $color-taupe-gray;
+			display: inline-block;
+			line-height: 2;
+			padding: 1em;
+
+			&:hover {
+				color: $color-teal;
+				text-decoration: none;
+			}
+		}
+	}
+}

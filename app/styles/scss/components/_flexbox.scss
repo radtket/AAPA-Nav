@@ -1,0 +1,74 @@
+.business-opportunities {
+  @include clearfix;
+  align-items: stretch;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  &__box {
+    align-self: stretch;
+    background: $body-bg-color;
+    display: block;
+    flex: 2 2 15em;
+    padding: 2em 2em 3em 2em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    border-bottom: 1px solid transparentize($color-quartz, 0.8);
+    border-right: 1px solid transparentize($color-quartz, 0.8);
+
+    &:focus,
+    &:hover {
+      background: transparentize($line-gray, 0.85);
+      text-decoration: none;
+      
+      h3 {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      display: block;
+      height: 3em;
+      margin: 0 auto 1em;
+      // opacity: 0.4;
+    }
+
+    &--title {
+      color: $darker-text-color;
+      margin-bottom: 0.5em;
+      font-weight: normal;
+    }
+
+    p {
+      color: rgba(51, 51, 51, 0.6);
+      margin: auto;
+    }
+
+    &--big {
+      flex: 1 1 40em;
+    }
+
+  }
+
+
+  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: white;
+    bottom: 0;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: white;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 4px;
+  }
+}

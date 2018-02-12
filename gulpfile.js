@@ -25,6 +25,7 @@ const gutil = require('gulp-util');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
+const sassGlob = require('gulp-sass-glob');
 const sourceMaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const minifyCSS = require('gulp-minify-css');
@@ -103,7 +104,7 @@ gulp.task('scripts-deploy', () =>
 gulp.task('styles', () =>
 	// the initializer / master SCSS file, which will just be a file that imports everything
 	gulp
-		.src('app/styles/scss/init.scss')
+		.src('app/styles/scss/site.scss')
 		// prevent pipe breaking caused by errors from gulp plugins
 		.pipe(
 			plumber({
@@ -115,6 +116,7 @@ gulp.task('styles', () =>
 		)
 		// get sourceMaps ready
 		.pipe(sourceMaps.init())
+		.pipe(sassGlob())
 		// include SCSS and list every "include" folder
 		.pipe(
 			sass({
@@ -147,6 +149,7 @@ gulp.task('styles-deploy', () =>
 		.src('app/styles/scss/init.scss')
 		.pipe(plumber())
 		// include SCSS includes folder
+		.pipe(sassGlob())
 		.pipe(
 			sass({
 				includePaths: ['app/styles/scss'],

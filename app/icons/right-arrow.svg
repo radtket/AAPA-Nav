@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="34px" viewBox="0 0 17 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Content-Modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Content-Copy-3" transform="translate(-1291.000000, -2300.000000)" fill="#BBBBBB">
+            <g id="QUOTE" transform="translate(-1.000000, 1972.000000)">
+                <path d="M1301.45396,337.331882 C1301.17871,337.094824 1300.81171,337 1300.49058,337 C1300.16946,337 1299.80246,337.094824 1299.52721,337.331882 L1284.52613,350.32271 C1283.88389,350.84424 1283.83801,351.839887 1284.34263,352.45624 C1284.84726,353.120005 1285.81063,353.167417 1286.407,352.645887 L1300.49058,340.508472 L1314.57416,352.645887 C1315.21641,353.167417 1316.13391,353.072593 1316.63853,352.45624 C1317.18903,351.792475 1317.09728,350.84424 1316.45503,350.32271 L1301.45396,337.331882 Z" id="Shape" transform="translate(1300.500000, 345.000000) rotate(90.000000) translate(-1300.500000, -345.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+.two-column {
+	.main-content {
+
+	}
+
+	.sidebar {
+
+	}
+
+	@include media($small-up) {
+		.main-content {
+			@include span-columns(15);
+		}
+
+		.sidebar {
+			@include span-columns(8);
+			@include shift(1);
+		}
+	}
+}

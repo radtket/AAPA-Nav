@@ -1,0 +1,18 @@
+.list {
+	&--link-arrow {
+		a {
+			display: block;
+			padding: 1em 1.8em 1em 1.8em;
+
+			&::before {
+				content: '›';
+				display: block;
+				float: left;
+			}
+			span {
+				display: block;
+				padding-left: 1.4em;
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+@for $i from 1 through $grid-columns {
+	.span-#{$i} {
+		@include span-columns($i);
+	}
+
+	.shift-#{$i} {
+		@include shift($i);
+	}
+}
+
+@include media($small-down) { // using small down should we also get xtra-small
+	@for $i from 1 through $grid-columns {
+		.small-span-#{$i} {
+			@include span-columns($i);
+		}
+
+		.small-shift-#{$i} {
+			@include shift($i);
+		}
+	}
+}
+
+@include media($medium-only) {
+	@for $i from 1 through $grid-columns {
+		.medium-span-#{$i} {
+			@include span-columns($i);
+		}
+
+		.medium-shift-#{$i} {
+			@include shift($i);
+		}
+	}
+}
+
+@include media($large-only) {
+	@for $i from 1 through $grid-columns {
+		.large-span-#{$i} {
+			@include span-columns($i);
+		}
+
+		.large-shift-#{$i} {
+			@include shift($i);
+		}
+	}
+}
+
+@include media($xlarge-only) {
+	@for $i from 1 through $grid-columns {
+		.xlarge-span-#{$i} {
+			@include span-columns($i);
+		}
+
+		.xlarge-shift-#{$i} {
+			@include shift($i);
+		}
+	}
+}

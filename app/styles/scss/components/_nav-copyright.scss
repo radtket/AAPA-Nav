@@ -1,0 +1,25 @@
+.nav--footer-copyright {
+	.nav__menu-item {
+
+		a {
+			display: block;
+			padding: 0.5em 0;
+		}
+
+		@include media($medium-up) {
+			display: inline;
+
+			a {
+				display: inline;
+			}
+
+			+ .nav__menu-item {
+				margin-left: 2em;
+			}
+		}
+
+		.nav__menu-content {
+			display: none;
+		}
+	}
+}

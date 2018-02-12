@@ -1,0 +1,136 @@
+$navigation-height: 65px;
+$top-bar_height: 35px;
+
+#fixed-header {
+	@include position(fixed, 0 null null 0);
+	width: 100%;
+	z-index: 1031 !important;
+}
+
+.full-wrapper {
+	@include outer-container;
+	@include clearfix;
+}
+
+.top-bar {
+	min-height: $top-bar_height;
+	background: $purple;
+	font-size: 11px;
+	letter-spacing: 1px;
+	position: relative;
+	@include media($small-down) {
+		min-height: 0;
+	}
+}
+
+.top-links {
+	text-transform: uppercase;
+	float: left;
+	@include media($small-down) {
+		// @include padding(5px null);
+		float: none !important;
+		text-align: center;
+	}
+
+	&.right {
+		float: right;
+
+		a {
+			color: $color-teal;
+			font-weight: $font-weight--bold;
+		}
+	}
+
+	li {
+		float: left;
+		@include media($small-down) {
+			float: none;
+			display: inline-block;
+		}
+
+		.fa {
+			color: $color-teal;
+			font-size: 14px;
+			position: relative;
+			top: 1px;
+			padding-right: 5px;
+		}
+
+		a,
+		span {
+			@include padding(0 $small-spacing);
+			color: $color-white;
+			display: block;
+			height: $top-bar_height;
+			line-height: $top-bar_height;
+			min-width: $top-bar_height;
+			text-align: center;
+			transition: all 0.1s cubic-bezier(0, 0, 0.58, 1);
+			@include media($small-down) {
+				display: inline-block;
+				min-width: 0;
+				// height: auto;
+				// line-height: 1;
+			}
+		}
+
+		a:hover {
+			color: $gray;
+			background-color: rgba(255, 255, 255, 0.05);
+			@include media($small-down) {
+				background: none;
+			}
+		}
+	}
+}
+/*
+* Desktop nav
+*/
+.main-nav {
+	@include position(relative, 0 null null 0);
+	@include size(100% $navigation-height);
+	background: $color-snow;
+	box-shadow: 0 2px 2px transparentize(black, 0.8);
+	font-size: em(12px);
+}
+
+.navigation-wrapper {
+	@include outer-container;
+	@include clearfix;
+	position: relative;
+}
+// Logo
+
+.logo {
+	@include padding(0 $small-spacing);
+	display: inline-block;
+	float: left;
+	height: $navigation-height;
+	line-height: $navigation-height;
+
+	img {
+		height: 45px;
+	}
+}
+// Button
+
+.dropdown {
+	float: right;
+	height: $navigation-height;
+	line-height: $navigation-height;
+
+	.dropdown-button {
+		background-color: $color-teal;
+		color: $purple;
+		cursor: pointer;
+		float: right;
+		font-weight: $font-weight--medium;
+		text-transform: uppercase;
+		width: 100%;
+		padding: 0 15px;
+
+		&:hover {
+			background-color: darken($color-teal, 10%);
+		}
+	}
+}

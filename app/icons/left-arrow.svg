@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="33px" viewBox="0 0 16 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Content-Modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Content-Copy-3" transform="translate(-139.000000, -2301.000000)" fill="#BBBBBB">
+            <g id="QUOTE" transform="translate(-1.000000, 1972.000000)">
+                <path d="M148.953955,337.831882 C148.678706,337.594824 148.311707,337.5 147.990583,337.5 C147.669459,337.5 147.30246,337.594824 147.027211,337.831882 L132.026133,350.82271 C131.383885,351.34424 131.33801,352.339887 131.842634,352.95624 C132.347257,353.620005 133.310629,353.667417 133.907002,353.145887 L147.990583,341.008472 L162.074164,353.145887 C162.716412,353.667417 163.633909,353.572593 164.138532,352.95624 C164.689031,352.292475 164.597281,351.34424 163.955033,350.82271 L148.953955,337.831882 Z" id="Shape-Copy" transform="translate(148.000000, 345.500000) scale(-1, 1) rotate(90.000000) translate(-148.000000, -345.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

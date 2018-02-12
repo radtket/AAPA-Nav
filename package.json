@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "description": "aapa-nav",
   "dependencies": {
-    "bourbon": "^5.0.0",
-    "bourbon-bitters": "^1.2.1",
-    "bourbon-neat": "^1.9.0",
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "1.8.0",
     "flickity": "^2.0.10",
     "normalize.css": "^7.0.0"
   },
@@ -26,6 +25,7 @@
     "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
     "gulp-sequence": "^0.4.6",
     "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^2.4.1",

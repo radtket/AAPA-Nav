@@ -1,0 +1,105 @@
+.agenda {
+	@include outer-container(100%);
+	@include padding(0);
+	@include margin(0 auto);
+	list-style: none;
+  box-sizing: border-box;
+
+	&__date {
+		@include span-columns(5);
+		@include omega;
+		@include padding(15% 3% 0 0);
+		@include margin(0);
+	  list-style: none;
+	  text-align: right;
+		box-sizing: border-box;
+
+	  @include media(new-breakpoint(max-width 700px)) {
+	  	@include padding(12% 0 null null);
+	    @include fill-parent;
+	    border-bottom: 1px solid $line-gray;
+	    text-align: left;
+	  }
+
+		h3 {
+			@include margin(0);
+		  font-size: 1.5em;
+		  color: $color-teal;
+		}
+		p {
+		  @include margin(0 0 10px 0);
+			font-size: 1em;
+			font-weight: $font-weight--medium;
+			color: $color-quartz;
+			text-transform: uppercase;
+		}
+	}
+
+
+	&__events {
+		@include span-columns(19);
+		@include omega;
+		@include margin(10% 0 0 0);
+		@include padding(3% null null null);
+		border-left: 1px solid $line-gray;
+		list-style: none;
+		box-sizing: border-box;
+
+		@include media(new-breakpoint(max-width 700px)) {
+			@include fill-parent;
+			@include margin(0);
+			@include padding(0);
+	    border: none;
+		}
+
+		&--detail {
+			max-width: 550px;
+			list-style: none;
+			box-sizing: border-box;
+
+			@include media(new-breakpoint(max-width 700px)) {
+				@include padding(0);
+				@include margin(0);
+			}
+			> li {
+				@include margin(0);
+				@include padding(10px);
+				@include size(100%);
+				border-bottom: 1px dashed $line-gray;
+				line-height: 22px;
+				transition: ease .4s all;
+				display: block;
+				&:hover {
+					background: $color-platinum;
+				}
+			}
+		}
+
+		&--time {
+			@include margin(2.5px 0);
+			font-size: .8em;
+			font-weight: $font-weight--medium;
+			color: $color-teal;
+			text-transform: uppercase;
+		}
+
+		&--location {
+			@include margin(2.5px 0);
+		  color: $darker-text-color;
+		  font-size: 1.1em;
+		  font-weight: $font-weight--medium;
+		}
+
+		&--desc {
+			@include margin(2.5px 0);
+			color: $lighter-text-color;
+			font-size: .9em;
+			display: block;
+			> li {
+				@include padding(0);
+				border-bottom: 0;
+				line-height: inherit;
+			}
+		}
+	}
+}
