@@ -1,0 +1,105 @@
+//nav
+$nav-color: $color-white !default;
+$nav-color-hover: $color-white !default;
+$nav-font-size: 14px !default;
+$nav-rounded: 3px !default;
+$nav-margin: 5px !default;
+$nav-padding: 4px 7px !default;
+$nav-background: $color-gray !default;
+$nav-background-hover: $color-teal !default;
+$nav-disabled-opacity: 0.5 !default;
+
+//dots
+$dot-width: 10px !default;
+$dot-height: 10px !default;
+$dot-rounded: 30px !default;
+$dot-margin: 5px 7px !default;
+$dot-background: $color-white !default;
+$dot-background-active: $color-teal !default;
+
+
+.owl-theme {
+
+	// Styling Next and Prev buttons
+	.owl-nav {
+		margin-top: 10px;
+		-webkit-tap-highlight-color: transparent;
+		text-align: center;
+
+		[class*='owl-'] {
+			background: $nav-background;
+			border-radius: 3px;
+			color: $nav-color;
+			cursor: pointer;
+			display: inline-block;
+			font-size: $nav-font-size;
+			margin: $nav-margin;
+			padding: $nav-padding;
+
+			&:hover {
+				background: $nav-background-hover;
+				color: $nav-color-hover;
+				text-decoration: none;
+			}
+		}
+
+		.disabled {
+			cursor: default;
+			opacity: $nav-disabled-opacity;
+		}
+	}
+
+	// Styling dots
+	.owl-nav.disabled+.owl-dots {
+		bottom: 36px;
+		position: relative;
+	}
+
+	.owl-dots {
+		-webkit-tap-highlight-color: transparent;
+		text-align: center;
+
+		.owl-dot {
+			display: inline-block;
+			margin-left: 4px;
+			margin-right: 4px;
+			zoom: 1;
+
+			span {
+				-webkit-backface-visibility: visible;
+				background: $dot-background;
+				border-radius: 30px;
+				display: block;
+				height: $dot-height;
+				margin: 0 17px;
+				position: relative;
+				transition: opacity 200ms ease;
+				width: $dot-width;
+
+				&::before {
+					border: 1px solid rgba($black, 0);
+					border-radius: 30px;
+					content: "";
+					height: 25px;
+					left: -17px;
+					margin: auto;
+					position: absolute;
+					right: -17px;
+					top: -7px;
+					width: 46px;
+				}
+			}
+
+			&.active,
+			&:hover {
+				span {
+					background: $dot-background-active;
+
+					&::before {
+						border-color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
