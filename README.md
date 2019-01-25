@@ -1,4 +1,4 @@
-AAPA Nav
+AAPA Nav and Slider
 ==========================
 
 
