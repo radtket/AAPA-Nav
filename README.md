@@ -1,22 +1,50 @@
-AAPA Nav and Slider
-==========================
+# Navigation and Slider Redesign - AAPA
 
+Redesigning the Hero which was originally isolated text, as well as shrinking the tertiary navigation which consumed a majority or the viewport on mobile
 
-* First download or clone this repo :)
-* Then run `npm install` to install dev dependencies. Use sudo if needed.
+**Live demo:** [https://radtket.github.io/nav-and-slider-redesign--aapa/](https://radtket.github.io/nav-and-slider-redesign--aapa/)
 
-You'll need to have Gulp installed. If you already have Gulp installed, you can skip the following line. It is as simple as running:
-* `npm install -g gulp`
+## Getting started
 
-During development mode, run the default task so you'll have watchers and browser sync. Simply do the following:
-* Run `gulp` to start it up
-* Try to modify html, scss and javascript files and see how the page gets updated with BrowserSync
+### Clone repo
 
-When you're ready to deploy, simply do the following:
-* Run `gulp deploy`
-* All of the files you need will be in /dist with your images optimized, css compressed and js compressed
+```bash
+# clone the repo
+$ git clone https://github.com/radtket/nav-and-slider-redesign--aapa.git my-project
 
-## Node Versions Supported
-The following Node versions have been tested
-* 4.x
-* 6.x
+# go into app's directory
+$ cd my-project
+
+# install app's dependencies
+$ npm install
+```
+
+## Usage
+
+```bash
+# serve with hot reload at localhost:3000.
+$ npm run start
+
+# build for production with minification
+$ npm run build
+```
+
+## What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```code
+my-project/
+├── docs/
+├── src/
+│   ├── favicon/
+│   ├── fonts/
+│   ├── icons/
+│   ├── img/
+│   ├── js/
+│   ├── scss/
+│   ├── ...
+│   ├── index.html
+│   └── ...
+└── package.json
+```
